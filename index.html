@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <!-- Title & Favicon -->
+  <title>Diceey</title>
+  <link rel="icon" href="dice-logo.png">
+
+  <!-- Load Bootstrap before linking to Stylesheet -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster" rel="stylesheet">
+
+  <!-- Jquery -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+<body>
+  
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <div class="container-fluid heading">
+    <h1 id="title"> Diceey</h1>
+    <h5>Can't decide? Let Diceey help.</h5>
+  </div>
+  <div class="container-fluid instructions">
+
+  <!-- Images -->
+  <div class="container-fluid">
+    <div class="container-of-images">
+      <img src="chick2.png" class="d-none d-lg-inline">
+      <figure>
+        <img id="dice1" class="dice" src="dice6.png">
+        <figcaption class="caption" id="caption1">Choice 1</figcaption>
+      </figure>
+      <figure>
+        <img id="dice2" class="dice" src="dice6.png">
+        <figcaption class="caption" id="caption2">Choice 2</figcaption>
+      </figure>
+      <br class="d-md-none">
+      <figure class="3choices">
+        <img id="dice3" class="dice" src="dice6.png">
+        <figcaption class="caption" id="caption3">Choice 3</figcaption>
+      </figure>
+      <figure class="4choices">
+        <img id="dice3" class="dice" src="dice6.png">
+        <figcaption class="caption" id="caption4">Choice 4</figcaption>
+      </figure>
+      <img src="chick1.png" class="d-none d-lg-inline">
+    </div>
+  </div>
+
+<div class="container-fluid">
+  <h5>Pick your choices here (up to 4):</h5>
+  <div class="container-of-forms">
+
+    <!-- Dropdown Button -->
+    <div class="dropdown">
+      <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+        <span id="noOfChoices" value="0">0</span>
+        <span class="caret"></span>
+      </button>
+      <ul id="list" class="dropdown-menu dropdown-info" aria-labelledby="dropdownMenu">
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+      </ul>
+
+      <!-- Input Text Fields -->
+      <div id="userInputFields" class="container-inner"><br>
+        <input class="text-input-box" id="choice-1" type="text" name="" value="" placeholder="Choice 1"> <br>
+        <input class="text-input-box" id="choice-2" type="text" name="" value="" placeholder="Choice 2"> <br>
+        <input class="text-input-box 3choices" id="choice-3" type="text" name="" value="" placeholder="Choice 3"> <br>
+        <input class="text-input-box 4choices" id="choice-4" type="text" name="" value="" placeholder="Choice 4">
+      </div>
+    </div>
+  </div>
+
+  <h5>The bigger number wins!</h5>
+  <!-- Submit Button -->
+  <a href="" id="submitButton" class="btn btn-info btn-lg" role="button">Go</a>
+</div>
+
+<!-- Load javascript after the html loads -->
+<script src="index.js" charset="utf-8"></script>
+</body>
+
+<footer>
+  😊 Thanks for playing 😊
+</footer>
+</html>
